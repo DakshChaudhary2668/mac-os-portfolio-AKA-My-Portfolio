@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "image": "/career-compass.png",
+    "title": "Career Compass — AI-Powered Career Guidance Platform",
+    "description": "An intelligent career guidance platform that analyzes user skills, interests, and education to generate personalized career paths with structured roadmaps, learning resources, and actionable steps.",
+    "impact": "Helps users make informed career decisions by providing personalized, AI-driven guidance instead of generic advice.",
+    "tags": ["React.js", "Node.js", "Express.js", "MongoDB", "OpenAI API", "Tailwind CSS"],
+    "repoLink": null,
+    "demoLink": null
+  },
+  {
+    "id": 2,
+    "image": "/Gym-Bro.png",
+    "title": "GymBro — AI-Powered Personalized Fitness Trainer",
+    "description": "An AI-based fitness app that delivers personalized workout and diet plans with real-time form correction using computer vision and voice feedback for an interactive training experience.",
+    "impact": "Makes personal fitness training accessible while reducing injury risk through real-time posture correction.",
+    "tags": ["React Native", "Node.js", "Supabase", "OpenCV", "MediaPipe", "BlazePose", "AI/ML", "TTS APIs"],
+    "repoLink": null,
+    "demoLink": "https://gymbrooverview.netlify.app"
+  },
+  {
+    "id": 3,
+    "image": "/teamfitai.png",
+    "title": "TeamFit AI — Real-Time Collaborative Coding Platform",
+    "description": "A real-time collaborative coding platform with multi-user sessions, keystroke-level contribution tracking, and AI-powered insights to evaluate team performance and coding behavior.",
+    "impact": "Improves team collaboration by providing real-time insights into productivity, contribution, and coding patterns.",
+    "tags": ["React.js", "Flask", "PostgreSQL", "WebSockets", "JWT", "Groq AI"],
+    "repoLink": "https://github.com/DakshChaudhary2668/teamfit-ai.git",
+    "demoLink": "https://teamfit-ai.vercel.app/"
+  },
+  {
+    "id": 4,
+    "image": "/macos-portfolio.png",
+    "title": "macOS Portfolio — Interactive OS UI Experience",
+    "description": "A highly interactive portfolio inspired by macOS, featuring draggable windows, dock interactions, dynamic app states, and a simulated operating system UI built with React.",
+    "impact": "Demonstrates advanced frontend engineering skills including state management, UI architecture, and system-level interaction design.",
+    "tags": ["React.js", "SCSS", "Framer Motion", "Vite", "react-rnd"],
+    "repoLink": "https://github.com/DakshChaudhary2668/MacosPortfolio",
+    "demoLink": null
+  }
+
+]

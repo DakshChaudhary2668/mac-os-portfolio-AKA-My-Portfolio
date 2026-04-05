@@ -1,0 +1,141 @@
+.dock {
+  position: absolute;
+  bottom: calc(env(safe-area-inset-bottom, 0px) + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  gap: 15px;
+
+  padding: 10px 18px;
+  border-radius: 24px;
+
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+.icon img {
+  width: 50px;
+  height: 47px;
+  object-fit: contain;
+  
+
+  transition:
+    transform 0.25s ease,
+    filter 0.25s ease;
+}
+
+.icon img:hover {
+  transform: scale(1.3);
+  filter: brightness(1.2);
+}
+.icon.active img {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 8px;
+  border-radius: 12px;
+}
+
+.icon.minimized img {
+  opacity: 0.9;
+  filter: saturate(0.85);
+}
+
+.icon.minimized::after {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  margin: 4px auto 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.icon img:hover {
+  transform: scale(1.3) translateY(-6px);
+}
+
+.icon:hover+ .icon,
+.icon:has(+ .icon:hover){   
+    
+    transform: scale(1.1) translateY(-4%);
+}
+
+.github {
+  background-color: black;
+  border-radius: 3rem;
+}
+
+
+/* 💻 CLI */
+.icon.cli img {
+  background: #1e1e1e;
+  filter: brightness(1.2);
+
+  border-radius: 0.75rem;
+}
+
+
+/* 🔗 Link */
+.icon.link img {
+  background: #0a84ff;
+  border-radius: 0.75rem;
+}
+
+/* ✉️ Mail */
+.icon.mail img {
+  background: #007aff;
+  border-radius: 0.75rem;
+}
+
+/* 📝 Notes */
+.icon.note img {
+  background: #ffd60a;
+  border-radius: 0.75rem;
+}
+.icon.spotify img {
+  background: #1DB954;
+  border-radius: 0.75rem;
+}
+
+/* 📄 PDF */
+.icon.pdf img {
+  background: #ff3b30;
+  border-radius: 0.75rem;
+}
+
+/* 📅 Calendar */
+.icon.calendar img {
+  background: #FF9933;
+  border-radius: 0.75rem;
+}
+
+@media (max-width: 900px) {
+  .dock {
+    gap: 8px;
+    padding: 8px 12px;
+    border-radius: 18px;
+    max-width: calc(100dvw - 18px);
+    max-width: calc(100vw - 18px);
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .dock::-webkit-scrollbar {
+    display: none;
+  }
+
+  .icon img {
+    width: 36px;
+    height: 34px;
+  }
+
+  .icon.active img {
+    padding: 6px;
+  }
+}
