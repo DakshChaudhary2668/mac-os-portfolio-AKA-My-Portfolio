@@ -1,7 +1,7 @@
 /**
- * @file: profile.config.ts
- * @author: Engineering Portfolio
- * @summary: A high-performance full-stack engineer.
+ * @file: daksh.profile.ts
+ * @author: Daksh Chaudhary
+ * @summary: BCA Student | Full Stack Developer | Builder
  */
 
 // --------------------------------------------------
@@ -10,96 +10,189 @@
 
 const TECH_STACK = {
   frontend: [
-    "React.js",    // 100%
-    "Next.js",     // 95%
-    "TailwindCSS", // 90%
-    "Three.js",    // 70%
+    "React.js",       // 85%
+    "Next.js",        // 75%
+    "TypeScript",     // 75%
+    "TailwindCSS",    // 90%
+    "React Native",   // 80%
   ],
+
   backend: [
-    "Node.js",     // 90%
-    "PostgreSQL",  // 85%
-    "Redis",       // 75%
-    "Docker",      // 80%
+    "Node.js",        // 80%
+    "Express.js",     // 80%
+    "MongoDB",        // 75%
+    "Supabase",       // 85%
+    "PostgreSQL",     // 70%
   ],
-  tools: ["AWS", "Git", "Figma", "Linux"]
+
+  currentlyLearning: [
+    "DSA",
+    "AWS",
+    "DevOps",
+    "OpenCV",
+    "System Design"
+  ],
+
+  tools: [
+    "Git",
+    "GitHub",
+    "Figma",
+    "Cursor AI",
+    "Google AI Studio",
+    "Vercel",
+    "Linux"
+  ]
 };
 
 // --------------------------------------------------
-// 2. EXPERIENCE LOG (Reverse Chronological)
+// 2. PROJECTS LOG
 // --------------------------------------------------
 
-class ProfessionalHistory {
+class BuilderJourney {
+
+  /**
+   * @period 2026 - Present
+   */
+  public async GymBro(): Promise<Project> {
+
+    const type = "AI Fitness Trainer & Progress Tracker";
+
+    const features = [
+      "AI Generated Workout Plans",
+      "Personalized Diet Charts",
+      "Progress Tracking",
+      "Voice Assistant Experience",
+      "Real-Time Form Correction"
+    ];
+
+    const goal = "Build the smartest gym companion for students and fitness enthusiasts.";
+
+    return { type, features, goal };
+  }
+
+  /**
+   * @period 2026
+   */
+  public async CureFleet(): Promise<Project> {
+
+    const type = "Emergency Healthcare Platform";
+
+    const modules = [
+      "Doctor Consultation",
+      "10-Minute Ambulance Request",
+      "Video Calling",
+      "Digital Prescriptions",
+      "Emergency Panic Button"
+    ];
+
+    return { type, modules };
+  }
+
+  /**
+   * @period 2026
+   */
+  public async JiMart(): Promise<Project> {
+
+    const type = "ONDC Buyer Network Platform";
+
+    const stack = [
+      "React Native",
+      "Supabase",
+      "AWS",
+      "ONDC APIs"
+    ];
+
+    return { type, stack };
+  }
+}
+
+// --------------------------------------------------
+// 3. ACHIEVEMENTS
+// --------------------------------------------------
+
+interface Achievement {
+  title: string;
+  year: number;
+  description: string;
+}
+
+const achievements: Achievement[] = [
   
-  /** * CURRENT ROLE
-   * @period 2023 - Present 
-   */
-  public async TechFlow_Systems(): Promise<Impact> {
-    const role = "Senior Full-Stack Engineer";
-    
-    // Key Achievements
-    const optimized = await api.optimize({ strategy: "Redis Caching" });
-    const latencyReduction = "40%";
-    
-    const leadership = this.mentor(["Jr. Dev 1", "Jr. Dev 2", "Jr. Dev 3"]);
-    const architecture = "Monolith -> Microservices Migration";
-    
-    return { role, optimized, architecture, leadership };
-  }
-
-  /** * PREVIOUS ROLE
-   * @period 2021 - 2023
-   */
-  public PixelPerfect_Studios(): void {
-    this.role = "Frontend Developer";
-    this.focus = "High-Fidelity Animations";
-    
-    // Implemented GSAP scroll-triggers for 15+ clients
-    // Improved Lighthouse Performance Scores: 65 -> 98
-  }
-}
-
-// --------------------------------------------------
-// 3. COMPETITIVE ACHIEVEMENTS
-// --------------------------------------------------
-
-interface HackathonWin {
-  rank: number;
-  event: string;
-  project: string;
-}
-
-const trophyCabinet: HackathonWin[] = [
   {
-    rank: 1,
-    event: "Global AI Hackathon 2024",
-    project: "EcoVision (Computer Vision Waste Segregation)",
-    // Prize: $5,000
+    title: "Founding Tech Lead At CureFleet Technologies",
+    year: 2026,
+    description: "I am Building A Startup In Healthcare."
   },
+
   {
-    rank: 500, // Top 500 Global
-    event: "Google Code Jam 2023",
-    project: "Algorithm Optimization (Dynamic Programming)",
+    title: "Hackshastra Grand Finale",
+    year: 2025,
+    description: "Selected in Top 30 Teams across India."
+  },
+
+  {
+    title: "Youngest Team Leader",
+    year: 2025,
+    description: "Led Team ProCoderZ at national-level hackathon."
+  },
+
+  {
+    title: "Scaler YIIC 4.0",
+    year: 2026,
+    description: "Selected for Scaler Young Innovators Internship Challenge."
   }
 ];
 
 // --------------------------------------------------
-// 4. ACADEMIC BACKGROUND
+// 4. EDUCATION
 // --------------------------------------------------
 
 const education = new Map<string, string>([
-  ["Stanford University", "MS Computer Science (3.9 GPA)"],
-  ["MIT World Peace Univ", "B.Tech Information Tech (8.8 CGPA)"]
+  [
+    "IMS Ghaziabad",
+    "Bachelor of Computer Applications (BCA)"
+  ]
 ]);
 
-export default new ProfessionalHistory();
+// --------------------------------------------------
+// 5. CURRENT MISSION
+// --------------------------------------------------
+
+const CURRENT_OBJECTIVES = [
+  "Crack an SDE Internship",
+  "Master MERN Stack",
+  "Become Strong in DSA",
+  "Ship CureFleet MVP",
+  "Build Products That Matter"
+];
+
+export default new BuilderJourney();
 
 
-```bash
 # TERMINAL OUTPUT
 # ---------------------------------------
-$ user --status
-> Status: Open to Opportunities
-> Location: Global / Remote
-> Loading Assets... [||||||||||] 100%
-> Ready.
-```
+
+$ daksh --status
+
+> Name: Daksh Chaudhary
+> Role: Full Stack Developer
+> Education: BCA @ IMS Ghaziabad
+> Location: Meerut, Uttar Pradesh
+
+> Current Focus:
+  - MERN Stack
+  - DSA
+  - React Native
+  - AI-Powered Products
+
+> Active Projects:
+  ✓ GymBro
+  ✓ CureFleet
+  ✓ TEAMFIT AI
+
+> Goal:
+  Secure an SDE Internship by 2028
+
+> Loading Ambition... [██████████] 100%
+
+> Status: Building.
