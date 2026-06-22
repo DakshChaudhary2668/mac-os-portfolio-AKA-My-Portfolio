@@ -7,7 +7,7 @@ const Resume = ({ onClose, onMinimize, isClosing, isMinimizing }) => {
     <MacWindow width="54vw" height="76vh" onClose={onClose} isClosing={isClosing} isMinimizing={isMinimizing} onMinimize={onMinimize}>
         <div className="resume">
             <embed
-              src="/Daksh_Chaudhary_Resume.pdf"
+              src="/Daksh_ChaudharyResume.pdf"
               type="application/pdf"
               title="Resume PDF"
               width="100%"
